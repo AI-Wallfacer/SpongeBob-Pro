@@ -1,0 +1,54 @@
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 训练输出
+out_*/
+*_out/
+pretrain_out/
+checkpoints/
+logs/
+*.log
+
+# 数据文件
+*.bin
+*.jsonl
+data/
+dataset/raw/
+dataset/processed/
+
+# 模型权重
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# 环境变量
+.env
+.env.local
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# SwanLab
+.swanlab/
+wandb/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
