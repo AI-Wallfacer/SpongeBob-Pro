@@ -85,9 +85,9 @@ SpongeBob-Pro/
 
 > 在大规模中文语料上进行无监督的语言建模训练，让模型学习基础的语言知识和语法结构。
 
-![image-20260308083754935](C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20260308083754935.png)
+![Pretrain](assets/pretrain.png)
 
-中途5090的卡存储满了😂删掉部分早期数据后曲线未在
+中途服务器的存储满了，删掉部分早期数据后由于swanlab曲线丢失 而后找到原曲线id又接上的😅
 
 
 ![Pretrain Results](assets/pretrain_result.png)
@@ -267,13 +267,6 @@ out_sft/exp_1/h768_l12_bs128_lr2e-05/
 > 使用强化学习方法，基于 DeepSeek Judge 的奖励信号进一步优化模型输出质量。
 
 <div align="center">
-
-![GRPO Training Process](assets/grpo1.png)
-
-*GRPO 通过多次采样和奖励信号优化模型输出，提升生成质量*
-
-</div>
-
 ### 🎯 核心机制
 
 GRPO 采用 **Group Relative Policy Optimization** 算法，结合格式检查和 Judge 评分：
@@ -351,8 +344,11 @@ out_grpo/exp_1/h768_l12_bs16_lr5e-07/
 ## 📊 实验结果展示
 
 <div align="center">
-
 ### 训练过程监控
+
+![GRPO Training Process](assets/grpo1.png)
+
+*GRPO 通过多次采样和奖励信号优化模型输出，提升生成质量*
 
 ![GRPO Training Metrics](assets/grpo2.png)
 
